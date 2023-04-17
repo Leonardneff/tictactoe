@@ -1,9 +1,12 @@
+body
+  background-color: #6fa4ca
+
 main 
   font-family: 'Roboto', sans-serif
   font-weight: 700
   display: flex
   justify-content: center
-
+ 
 .game 
   font-size: 20px
 
@@ -13,24 +16,31 @@ main
   margin: 0 auto
   display: flex
   flex-direction: column
-
+  border: none
 
 .board-row
   display: flex
   flex-direction: row
-    
+
+  &:first-child, &:nth-child(2)
+    border-width: 0 0 8px 0
+    border-style: solid
+    border-color: #5188b0 
 
 .square
   width: 100px
   height: 100px
   cursor: pointer
-  background: rgb(38, 68, 127)
+  background: #6fa4ca
   font-size: 80px
-  color: #fff
+  color: #5188b0
   padding: 0
-
-  &:hover
-    background-color: rgb(62, 81, 119)
+  border: none
+   
+  &:first-child, &:nth-child(2)  
+    border-width: 0 8px 0 0 
+    border-style: solid
+    border-color: #5188b0
   
-  &:active  
-    background-color: rgb(62, 82, 119)
+
+
